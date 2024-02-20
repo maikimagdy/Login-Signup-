@@ -1,0 +1,12 @@
+.container {
+  padding: 50px;
+  width: 100%;
+}
+.container h1 {
+  color: red;
+  font-size: 60px;
+}
+.container h2 {
+  font-weight: 900;
+  color: #1096e1;
+}

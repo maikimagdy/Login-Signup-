@@ -1,0 +1,75 @@
+.form {
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 33rem;
+  border-radius: 12px;
+  box-shadow: -1px 1px 7px 3px grey;
+}
+.form > * {
+  margin: 10px;
+}
+.inputreg {
+  position: relative;
+}
+.inputreg label,
+.inputreg input {
+  display: block;
+}
+.inputreg label {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 15px;
+  color: gray;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.inputreg input:placeholder-shown + label {
+  visibility: hidden;
+  top: 20px;
+  left: 20px;
+}
+
+.inputreg input {
+  padding: 15px;
+  outline: none;
+  box-shadow: 0 0 5px gray inset;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form p:not(.err) {
+  font-size: 35px;
+  color: #8e9433;
+  font-weight: bold;
+}
+
+.form button {
+  margin: 0 10px;
+  padding: 15px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #8e9433;
+  font-size: 20px;
+  width: 60%;
+  cursor: pointer;
+}
+.inputreg input:focus:valid {
+  border-bottom: 3px solid green;
+}
+
+.inputreg input:focus:not(:valid) {
+  border-bottom: 3px solid orangered;
+}
+.err {
+  background-color: #f7a5c675;
+  color: #842029;
+  font-size: 15px;
+  padding: 3px;
+  border-radius: 10px;
+  width: 79%;
+  margin: 6px;
+}
